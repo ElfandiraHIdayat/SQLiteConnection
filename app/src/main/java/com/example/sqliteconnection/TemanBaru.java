@@ -35,14 +35,14 @@ public class TemanBaru extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(tNama.getText().toString().equals("") || tTelpon.getText().toString().equals("")){
-                    Toast.makeText(getApplicationContext(),"Data Belum komplit" ,Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Data Belum Lengkap" ,Toast.LENGTH_SHORT).show();
                 }else {
                     nm = tNama.getText().toString();
                     tlp = tTelpon.getText().toString();
 
                     HashMap<String,String> qvalue = new HashMap<>();
                     qvalue.put("nama",nm);
-                    qvalue.put("telpon",tlp);
+                    qvalue.put("telepon",tlp);
 
                     controller.insertData(qvalue);
                     callHome();

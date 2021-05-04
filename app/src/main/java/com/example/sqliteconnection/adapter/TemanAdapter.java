@@ -21,6 +21,7 @@ public class TemanAdapter extends RecyclerView.Adapter<TemanAdapter.TemanViewHol
     private ArrayList<Teman> ListData;
     //  construktor
     public TemanAdapter(ArrayList<Teman> listData) {
+
         ListData = listData;
     }
 
@@ -51,6 +52,7 @@ public class TemanAdapter extends RecyclerView.Adapter<TemanAdapter.TemanViewHol
 //  bisa ditambahin / biarkan saja
     @Override
     public int getItemCount() {
+
         return (ListData != null) ? ListData.size() : 0;
     }
 

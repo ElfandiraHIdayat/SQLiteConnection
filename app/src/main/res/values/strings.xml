@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SQLiteConnection</string>
+    <string name="delletedata">Delete data</string>
+    <string name="editdata">Edit data</string>
 </resources>
